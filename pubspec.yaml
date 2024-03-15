@@ -1,0 +1,31 @@
+name: min_example
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.6 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  patrol: ^3.5.2
+  patrol_finders: ^2.0.2
+
+flutter:
+  uses-material-design: true
+
+patrol:
+  app_name: My App
+  android:
+    package_name: com.example.min_example
+  ios:
+    bundle_id: com.example.min_example
