@@ -1,0 +1,7 @@
+test:
+  success:
+    no_server: patrol develop --targets integration_test/main_test.dart --verbose
+    app_server: patrol develop --targets integration_test/main_test.dart --verbose --app-server-port=8083
+
+  fail:
+    test_server: patrol develop --targets integration_test/main_test.dart --verbose --test-server-port=8083
